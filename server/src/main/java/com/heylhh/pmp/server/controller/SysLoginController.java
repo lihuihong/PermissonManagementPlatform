@@ -104,7 +104,6 @@ public class SysLoginController extends AbstractController {
         if (!kaptcha.equals(captcha)){
             return new BaseResponse(StatusCode.InvalidCode);
         }
-
         try {
             //提交登录
             Subject subject= SecurityUtils.getSubject();
